@@ -3,26 +3,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sistema de Boletos - Setup Inicial</title>
-  <style>
-    body { font-family: Arial, sans-serif; padding: 20px; }
-    form { display: flex; flex-direction: column; max-width: 300px; gap: 10px; }
-    #mensaje { margin-top: 15px; font-weight: bold; }
-  </style>
+  <title>TransEcuador - Compra tus pasajes</title>
+  <link rel="stylesheet" href="src/styles/landing.css" />
 </head>
 <body>
-  <h1>Registro de Administrador Inicial</h1>
-  <form id="registroForm">
-    <input type="text" id="nombres" placeholder="Nombres completos" required>
-    <input type="text" id="apellidos" placeholder="Apellidos completos" required>
-    <input type="text" id="cedula" placeholder="Cédula (10 dígitos)" required>
-    <input type="email" id="correo" placeholder="Correo electrónico" required>
-    <input type="password" id="password" placeholder="Contraseña segura" required>
-    <button type="submit">Crear Administrador</button>
-  </form>
-  
-  <div id="mensaje"></div>
+  <header>
+    <div class="logo">🚌 TransEcuador</div>
+    <nav>
+      <a href="/login/" class="btn-login">Acceso Personal</a>
+    </nav>
+  </header>
 
-  <script type="module" src="/src/main.js"></script>
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Conectando destinos, uniendo al Ecuador</h1>
+      <p>Revisa nuestras frecuencias en tiempo real.</p>
+    </div>
+  </section>
+
+  <main class="container">
+    <h2 class="section-title">Frecuencias Disponibles</h2>
+    <div id="gridFrecuencias" class="rutas-grid">
+    </div>
+  </main>
+
+  <script type="module" src="src/landing.js"></script>
 </body>
 </html>

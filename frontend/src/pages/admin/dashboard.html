@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel Admin</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+    <!-- SIDEBAR -->
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <img id="logo-img" src="" alt="" style="display:none; height:40px;">
+            <span id="nombre-cooperativa"></span>
+        </div>
+
+        <nav class="sidebar-nav">
+            <a href="#" class="nav-item active" data-page="inicio">
+                <span>🏠</span> Inicio
+            </a>
+            <a href="#" class="nav-item" data-page="cooperativa">
+                <span>🏢</span> Cooperativa
+            </a>
+            <a href="#" class="nav-item" data-page="usuarios">
+                <span>👥</span> Usuarios
+            </a>
+            <a href="#" class="nav-item" data-page="buses">
+                <span>🚌</span> Buses
+            </a>
+            <a href="#" class="nav-item" data-page="ciudades">
+                <span>🏙️</span> Ciudades
+            </a>
+            <a href="#" class="nav-item" data-page="frecuencias">
+                <span>🗓️</span> Frecuencias
+            </a>
+            <a href="#" class="nav-item" data-page="hojas-ruta">
+                <span>📋</span> Hojas de Ruta
+            </a>
+            <a href="#" class="nav-item" data-page="boletos">
+                <span>🎫</span> Boletos
+            </a>
+        </nav>
+
+        <div class="sidebar-footer">
+            <div class="usuario-info">
+                <span id="usuario-nombre"></span>
+                <small>Administrador</small>
+            </div>
+            <button class="btn-logout" id="btnLogout">Salir</button>
+        </div>
+    </div>
+
+    <!-- MAIN -->
+    <div class="main">
+        <div class="topbar">
+            <button class="btn-menu" id="btnMenu">☰</button>
+            <h2 id="page-title">Inicio</h2>
+        </div>
+
+        <div class="content" id="content">
+            <!-- contenido dinámico -->
+        </div>
+    </div>
+
+    <script type="module" src="dashboard.js"></script>
+</body>
+</html>

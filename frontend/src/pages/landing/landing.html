@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cargando...</title>
+    <link rel="stylesheet" href="landing.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img id="logo-img" src="" alt="" style="display:none; height:40px;">
+                <span id="nombre-cooperativa"></span>
+            </div>
+            <div class="nav-links">
+                <a href="#rutas">Rutas</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#contacto">Contacto</a>
+                <a href="/src/pages/auth/login.html" class="btn-login">Iniciar Sesión</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 id="hero-titulo">Viaja seguro por todo Ecuador</h1>
+            <p>Compra tus boletos en línea y viaja con comodidad</p>
+
+            <!-- BUSCADOR -->
+            <div class="buscador">
+                <h3>Busca tu ruta</h3>
+                <div class="buscador-form">
+                    <div class="form-group">
+                        <label>Origen</label>
+                        <select id="origen">
+                            <option value="">Selecciona ciudad</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Destino</label>
+                        <select id="destino">
+                            <option value="">Selecciona ciudad</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Fecha</label>
+                        <input type="date" id="fecha">
+                    </div>
+                    <button class="btn-buscar" id="btnBuscar">Buscar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RESULTADOS -->
+    <section class="resultados" id="resultados" style="display:none">
+        <div class="container">
+            <h2>Rutas disponibles</h2>
+            <div id="listaResultados"></div>
+        </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section class="servicios" id="rutas">
+        <div class="container">
+            <h2>¿Por qué viajar con nosotros?</h2>
+            <div class="servicios-grid">
+                <div class="servicio-card">
+                    <span>🎫</span>
+                    <h3>Compra en línea</h3>
+                    <p>Adquiere tus boletos desde cualquier lugar y a cualquier hora</p>
+                </div>
+                <div class="servicio-card">
+                    <span>💺</span>
+                    <h3>Elige tu asiento</h3>
+                    <p>Selecciona el asiento que más te guste según disponibilidad</p>
+                </div>
+                <div class="servicio-card">
+                    <span>📱</span>
+                    <h3>Boleto digital</h3>
+                    <p>Recibe tu boleto con código QR directo en tu dispositivo</p>
+                </div>
+                <div class="servicio-card">
+                    <span>🔒</span>
+                    <h3>Pago seguro</h3>
+                    <p>Múltiples métodos de pago con total seguridad</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NOSOTROS -->
+    <section class="nosotros" id="nosotros">
+        <div class="container">
+            <h2>Sobre nosotros</h2>
+            <p id="texto-nosotros"></p>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="contacto" id="contacto">
+        <div class="container">
+            <h2>Contacto</h2>
+            <div class="contacto-grid">
+                <div class="contacto-item" id="item-telefono" style="display:none">
+                    <span>📞</span>
+                    <p id="telefono-soporte"></p>
+                </div>
+                <div class="contacto-item" id="item-correo" style="display:none">
+                    <span>✉️</span>
+                    <p id="correo-soporte"></p>
+                </div>
+                <div class="contacto-item" id="item-direccion" style="display:none">
+                    <span>📍</span>
+                    <p id="direccion"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p id="footer-texto"></p>
+            <div class="redes" id="redes"></div>
+        </div>
+    </footer>
+
+    <script type="module" src="landing.js"></script>
+</body>
+</html>
